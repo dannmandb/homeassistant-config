@@ -1,0 +1,40 @@
+# Example configuration.yaml entry
+  - platform: group
+    name: Bathroom Lights
+    entities:
+      - light.bathroom_light_left
+      - light.bathroom_light_centre
+      - light.bathroom_light_right
+      
+  - platform: group      
+    name: Bedroom Lights
+    entities:
+      - light.bedroom_light_left
+      - light.bedroom_light_centre
+      - light.bedroom_light_right
+      
+  - platform: group      
+    name: Living Room Lights
+    entities:
+      - light.livingroom_light_left_1
+      - light.livingroom_light_left_2
+      - light.livingroom_light_left_3
+      - light.livingroom_light_right_1
+      - light.livingroom_light_right_2
+      - light.livingroom_light_right_3
+      - light.livingroom_light_standard
+      
+  - platform: group      
+    name: Hallway Lights
+    entities:
+      - light.hall_light_1
+      - light.hall_light_2
+      - light.hall_light_3
+      - light.hall_light_4
+      - light.hall_light_front
+     
+  - platform: group
+    name: Office Lights
+    entities:
+      - light.office_light
+      

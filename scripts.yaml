@@ -1,0 +1,17 @@
+lights_from_153_to_300:
+  alias: All lights to 75 153
+  sequence:
+  - scene: scene.bathroom_bright_lighting
+  - scene: scene.hallway_75_153_lights
+  - scene: scene.bedroom_75_153
+  - scene: scene.living_room_75_153_lights
+  - scene: scene.office_75_153_lights
+  mode: single
+all_lights_75_300:
+  alias: All lights 75 300
+  sequence:
+  - scene: scene.living_room_75_300_lights
+  - scene: scene.bathroom_300_lights
+  - scene: scene.bedroom_75_300
+  - scene: scene.hallway_75_300_lights
+  mode: single
