@@ -1,1 +1,30 @@
-[]
+
+  - alias: "Media player paused/stopped"
+    trigger:
+      - platform: state
+        entity_id: media_player.plex_plex_for_samsung_tv_2018
+        from: "playing"
+        to: "idle"
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: "above_horizon"
+    action:
+        service: scene.turn_on
+        target:
+          entity_id: scene.livingroom_normal
+
+  - alias: "Media player playing"
+    trigger:
+      - platform: state
+        entity_id: media_player.plex_plex_for_samsung_tv_2018
+        to: "playing"
+        from: "idle"
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: "above_horizon"
+    action:
+        service: scene.turn_on
+        target:
+          entity_id: scene.livingroom_dim

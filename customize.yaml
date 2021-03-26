@@ -1,0 +1,15 @@
+light.bathroom_lights:
+  brightness: 60
+  icon: mdi:spotlight-beam
+  supported_features: 191
+light.bedroom_lights:
+  icon: mdi:spotlight-beam
+  supported_features: 191
+light.living_room_lights:
+  icon: mdi:spotlight-beam
+  supported_features: 191
+light.hallway_lights:
+  icon: mdi:spotlight-beam
+  supported_features: 191
+light.office_lights:
+  supported_features: 191
